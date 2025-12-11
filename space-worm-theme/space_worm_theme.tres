@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://diuldrdaug13b" path="res://Themes/space-worm-theme/button/Blue_Tab.png" id="20_ogek7"]
 [ext_resource type="Texture2D" uid="uid://bplcx0rmemihi" path="res://Themes/space-worm-theme/general/DownArrow.png" id="21_7nmis"]
 [ext_resource type="Texture2D" uid="uid://c5v6moqo7lo5f" path="res://Themes/space-worm-theme/general/RightArrow.png" id="22_3nfh5"]
+[ext_resource type="Texture2D" uid="uid://cwlexsvog6plr" path="res://Themes/space-worm-theme/general/UpArrow.png" id="22_bqx4i"]
 [ext_resource type="Texture2D" uid="uid://lncix2lqma8" path="res://Themes/space-worm-theme/general/LeftArrow.png" id="23_ya1kp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gcxt6"]
@@ -187,10 +188,10 @@ texture = ExtResource("12_qrsf7")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_liex0"]
 texture = ExtResource("14_xbunk")
-texture_margin_left = 8.0
-texture_margin_top = 8.0
-texture_margin_right = 8.0
-texture_margin_bottom = 8.0
+texture_margin_left = 12.0
+texture_margin_top = 12.0
+texture_margin_right = 12.0
+texture_margin_bottom = 12.0
 expand_margin_left = 2.0
 expand_margin_top = 2.0
 expand_margin_right = 2.0
@@ -209,31 +210,6 @@ expand_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vw0y0"]
 bg_color = Color(0.607843, 0.556863, 0.768627, 1)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l6wdm"]
-texture = ExtResource("1_lfy6v")
-texture_margin_left = 8.0
-texture_margin_right = 8.0
-texture_margin_bottom = 8.0
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7ry5c"]
-texture = ExtResource("1_ulhmq")
-texture_margin_left = 8.0
-texture_margin_top = 8.0
-texture_margin_right = 8.0
-texture_margin_bottom = 8.0
-region_rect = Rect2(0, 0, 32, 32)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dm4bf"]
-texture = ExtResource("18_ig4yb")
-texture_margin_left = 12.0
-texture_margin_top = 8.0
-texture_margin_right = 8.0
-expand_margin_right = 8.0
-expand_margin_bottom = 4.0
-region_rect = Rect2(0, 0, 32, 32)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2x3q7"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3xxpy"]
 texture = ExtResource("19_ogek7")
@@ -259,6 +235,25 @@ texture_margin_top = 8.0
 texture_margin_right = 8.0
 expand_margin_right = 8.0
 expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7ry5c"]
+texture = ExtResource("1_ulhmq")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dm4bf"]
+texture = ExtResource("18_ig4yb")
+texture_margin_left = 12.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 4.0
+region_rect = Rect2(0, 0, 32, 32)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2x3q7"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o80ik"]
 texture = ExtResource("5_3rf8f")
@@ -390,8 +385,10 @@ CodeEdit/colors/font_selected_color = Color(1, 1, 1, 1)
 CodeEdit/colors/line_number_color = Color(0.662745, 0.647059, 0.666667, 1)
 CodeEdit/colors/selection_color = Color(0, 0.501961, 0.501961, 1)
 CodeEdit/fonts/font = ExtResource("1_6u0fb")
+ColorPicker/icons/bar_arrow = ExtResource("22_bqx4i")
 ColorPicker/icons/color_okhsl_hue = null
-ColorPicker/icons/sample_bg = ExtResource("8_88cds")
+ColorPicker/icons/expanded_arrow = ExtResource("21_7nmis")
+ColorPicker/icons/folded_arrow = ExtResource("22_3nfh5")
 HScrollBar/styles/grabber = SubResource("StyleBoxTexture_4xi7t")
 HScrollBar/styles/grabber_highlight = SubResource("StyleBoxTexture_tu48x")
 HScrollBar/styles/grabber_pressed = SubResource("StyleBoxTexture_lf3m6")
@@ -439,10 +436,26 @@ PopupPanel/styles/panel = SubResource("StyleBoxTexture_liex0")
 ProgressBar/fonts/font = ExtResource("1_6u0fb")
 ProgressBar/styles/background = SubResource("StyleBoxTexture_7bs12")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_vw0y0")
-TabBar/styles/tab_selected = SubResource("StyleBoxTexture_l6wdm")
+SpinBox/icons/down = ExtResource("21_7nmis")
+SpinBox/icons/down_disabled = ExtResource("21_7nmis")
+SpinBox/icons/down_hover = ExtResource("21_7nmis")
+SpinBox/icons/down_pressed = ExtResource("21_7nmis")
+SpinBox/icons/up = ExtResource("22_bqx4i")
+SpinBox/icons/up_disabled = ExtResource("22_bqx4i")
+SpinBox/icons/up_hover = ExtResource("22_bqx4i")
+SpinBox/icons/up_pressed = ExtResource("22_bqx4i")
+TabBar/colors/font_selected_color = Color(0.9490196, 0.9490196, 0, 1)
+TabBar/colors/font_unselected_color = Color(0, 0, 0, 1)
+TabBar/styles/tab_hovered = SubResource("StyleBoxTexture_3xxpy")
+TabBar/styles/tab_selected = SubResource("StyleBoxTexture_57qu0")
+TabBar/styles/tab_unselected = SubResource("StyleBoxTexture_ogek7")
 TabContainer/colors/font_unselected_color = Color(0.262932, 0.262932, 0.262933, 1)
 TabContainer/constants/side_margin = 0
 TabContainer/fonts/font = ExtResource("1_6u0fb")
+TabContainer/icons/decrement = ExtResource("23_ya1kp")
+TabContainer/icons/decrement_highlight = ExtResource("23_ya1kp")
+TabContainer/icons/increment = ExtResource("22_3nfh5")
+TabContainer/icons/increment_highlight = ExtResource("22_3nfh5")
 TabContainer/styles/panel = SubResource("StyleBoxTexture_7ry5c")
 TabContainer/styles/tab_disabled = SubResource("StyleBoxTexture_dm4bf")
 TabContainer/styles/tab_focus = SubResource("StyleBoxTexture_2x3q7")
