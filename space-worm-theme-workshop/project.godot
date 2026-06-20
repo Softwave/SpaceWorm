@@ -8,11 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="SpaceWormThemeWorkshop"
 run/main_scene="uid://yylisnkepapq"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 boot_splash/bg_color=Color(0.34901962, 0.3372549, 0.78431374, 1)
 boot_splash/image="uid://cqvsxqxneoso4"
 config/icon="uid://3ruf6byxjadb"
@@ -25,3 +29,7 @@ window/size/viewport_height=500
 [dotnet]
 
 project/assembly_name="SpaceWormThemeWorkshop"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

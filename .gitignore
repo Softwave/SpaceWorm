@@ -2,6 +2,8 @@
 .godot/
 .nomedia
 
+Inspo
+
 # Godot-specific ignores
 .import/
 export.cfg
