@@ -216,9 +216,10 @@ item_2/text = "Item 3"
 [node name="TabContainer" type="TabContainer" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3" unique_id=1829149150]
 layout_mode = 2
 size_flags_vertical = 3
-current_tab = 0
+current_tab = 1
 
 [node name="Panel" type="Panel" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3/TabContainer" unique_id=1320391340]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -248,7 +249,6 @@ layout_mode = 2
 text = "Gimme!"
 
 [node name="Panel2" type="Panel" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3/TabContainer" unique_id=941223725]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
@@ -270,6 +270,13 @@ layout_mode = 2
 [node name="Button" type="Button" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3/TabContainer/Panel2/MarginContainer/VBoxContainer" unique_id=1760970846]
 layout_mode = 2
 text = "No,me!"
+
+[node name="CheckBox" type="CheckBox" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3/TabContainer/Panel2/MarginContainer/VBoxContainer" unique_id=216142542]
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Panel/MarginContainer/HBoxContainer/VBoxContainer3/TabContainer/Panel2/MarginContainer/VBoxContainer" unique_id=442747365]
+layout_mode = 2
+text = "Click"
 
 [node name="Window" type="Window" parent="." unique_id=1870262889]
 oversampling_override = 1.0
